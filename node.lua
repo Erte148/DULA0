@@ -12,8 +12,8 @@ util.data_mapper{
 }
 
 function node.render()
-   if count==17 then  num=555 
-    elseif count==18 then  num=666 
+   if count==17 then  num=count
+    elseif count==18 then  num=count
      else num=0
         end
      
