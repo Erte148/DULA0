@@ -3,7 +3,7 @@ from hosted import device, node, config
 config.restart_on_update()
 
 counter = 0
-device.gpio.monitor(config.pin2)
+device.gpio.monitor(config.pin)
 for (pin2, state) in device.gpio.poll_forever():
     if state is True:
         counter += 10
