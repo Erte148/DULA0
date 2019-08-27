@@ -9,6 +9,6 @@
         "ui_width": 4,
         "name": "pin",
         "type": "integer",
-        "default": 11
+        "default": 18
     }]
 }
