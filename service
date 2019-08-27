@@ -8,7 +8,7 @@ device.gpio.monitor(config.pin)
 device.gpio.monitor(config.pin2)
 for (pin, state) in device.gpio.poll_forever():
     
-   if state is True and pin==17:    
+   if state is True and pin=="17":    
    counter += 10
    node.send('/counter:%d' % counter) 
 
