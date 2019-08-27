@@ -14,6 +14,7 @@ util.data_mapper{
 function node.render()
    if count==17 then  num=555 
     elseif count==18 then  num=666 
+     else num=0
         end
      
     gl.clear(0,0,0,1)
