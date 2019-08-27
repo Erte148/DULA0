@@ -10,7 +10,7 @@ device.gpio.monitor(config.pin2)
 for (pin, state) in device.gpio.poll_forever():
     
     if state is True:
-     num=pin
+     num=int(pin)
      else:
       num=0
     
