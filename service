@@ -3,18 +3,16 @@ from hosted import device, node, config
 config.restart_on_update()
 
 counter = 0
+pins = set()
+pins.add(18)
+pins.add(17)
 
-device.gpio.monitor(config.pin)
-device.gpio.monitor(config.pin2)
-for (pin2, state) in device.gpio.poll_forever():
-    if state is True:
+print >>sys.stderr, "gpios active: %s" % (pins,)
+    for pin in pins:
+        device.gpio.monitor(pin)
+    for pin, high in device.gpio.poll_forever():
+        if high:
         counter += 10
         node.send('/counter:%d' % counter)
-   elseif    
-for (pin, state) in device.gpio.poll_forever():
-    if state is True:
-        counter += 1
-        node.send('/counter:%d' % counter)
-            
             
 
