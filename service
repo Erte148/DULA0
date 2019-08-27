@@ -12,6 +12,8 @@ for (pin, state) in device.gpio.poll_forever():
  if state is True:
         counter += 10
         node.send('/counter:%d' % pin)
+ else:    
+        node.send('/counter:%d' % counter)
 
             
 
