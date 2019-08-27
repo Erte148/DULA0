@@ -3,9 +3,8 @@ from hosted import device, node, config
 config.restart_on_update()
 
 counter = 0
-pins = set()
-pins.add(18)
-pins.add(17)
+pins =  {18,17}
+
 
 
     for pin in pins:
