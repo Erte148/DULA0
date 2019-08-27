@@ -12,8 +12,9 @@ util.data_mapper{
 }
 
 function node.render()
-    if count==17 then  num=555 end
-    if count==18 then  num=666 end    
+    if count==17 then  num=555 
+    elseif count==18 then  num=666 
+    end    
     gl.clear(0,0,0,1)
     font:write(30, 10, "Motion Detected", 100, .5,.5,.5,1)
     countStr = tostring(num)
