@@ -14,7 +14,7 @@
      {
         "title": "PIN2",
         "ui_width": 4,
-        "name": "pin",
+        "name": "pin2",
         "type": "integer",
         "default": 17
     }]
