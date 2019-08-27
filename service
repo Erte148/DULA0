@@ -3,15 +3,16 @@ from hosted import device, node, config
 config.restart_on_update()
 
 counter = 0
-pins =  {18,17}
+ 
 
-
-
-    for pin in pins:
-        device.gpio.monitor(pin)
-    for pin, state in device.gpio.poll_forever():
-        if state is True:
+device.gpio.monitor(config.pin)
+device.gpio.monitor(config.pin2)
+for (pin, state) in device.gpio.poll_forever():
+    
+    if state is True:
         counter += 10
-        node.send('/counter:%d' % counter)
+        node.send('/counter:%d' % pin)
+        
+
             
 
