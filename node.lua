@@ -7,7 +7,7 @@ local num=0
 
 util.data_mapper{
     counter = function(counter)
-        count = counter
+        count = tonumber(counter)
     end,
 }
 
