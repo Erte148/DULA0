@@ -3,7 +3,7 @@ from hosted import device, node, config
 config.restart_on_update()
 
 counter = 0
-num=0
+num=""
  
 device.gpio.monitor(config.pin)
 device.gpio.monitor(config.pin2)
