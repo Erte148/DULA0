@@ -12,9 +12,12 @@ util.data_mapper{
 }
 
 function node.render()
-   if count==17 then  num=count
-    elseif count==18 then  num=count
-     else num=0
+  if count==18 then  num=count
+  elseif count==17 then  num=count
+  elseif count==27 then  num=count  
+  elseif count==23 then  num=count
+  elseif count==25 then  num=count      
+ else num=0
         end
      
     gl.clear(0,0,0,1)
